@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "virtualNetworkName": {
+      "value": "appnet"
+    },
+    "virtualNetworkAddressPrefix": {
+      "value": "172.10.0.0/21"
+    },
+    "subnetName": {
+      "value": "private"
+    },
+    "subnetAddressPrefix": {
+      "value": "172.10.1.0/24"
+    },
+    "loadBalancerName": {
+      "value": "jenkins"
+    },
+    "vmscalesetName": {
+      "value": "jenkins"
+    },
+    "availabilitySetName": {
+      "value": "availabilityset"
+    },
+    "adminUsername": {
+      "value": "globoadmin"
+    },
+    "adminPassword": {
+      "value": "globoPassword123!"
+    },
+    "virtualMachineNamePrefix": {
+      "value": "globo"
+    },
+    "virtualMachineSize": {
+      "value": "Standard_D3"
+    },
+    "imageName": {
+      "value": "jenkins163"
+    },
+    "imageRG": {
+      "value": "packer-images"
+    },
+    "dnsNameforLBIP": {
+      "value": "globo-jenkins"
+    }
+  }
+}
